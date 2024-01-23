@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<style>
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .bcard:hover{
+        box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.471);
+    }
+    .image{
+      width: 100%;
+      height: 600px;
+      border-bottom-left-radius: 50% 20%;
+      border-bottom-right-radius: 50% 20%;
+      background-image: url(iStock-1328126737.jpg);
+      background-size: cover;
+      position: relative;
+    }
+    .curved {
+      width: 100%;
+      position:absolute;
+      background: #03142584;
+      height: 600px;
+      border-bottom-left-radius: 50% 20%;
+      border-bottom-right-radius: 50% 20%;
+    }
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+    }
+
+    .hover-underline-animation:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0087ca;
+      transform-origin: bottom right;
+      transition: transform 0.20s ease-out;
+    }
+
+    .hover-underline-animation:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    @media screen and (max-width: 767px) {
+      .bsm-media{
+        margin-top: 10px;
+      }
+    }
+    @media screen and (max-width:767px){
+      .card-sm-media{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.304);
+      }
+      .padding-left-sm{
+         margin-left: 17px;
+      }
+      .title-sm-media{
+        padding-top: 10px;
+        font-size: 28px;
+      }
+    }
+    @media screen and (max-width:991px){
+      .card-md-media{
+        border-right: 1px solid rgba(128, 128, 128, 0.304);
+      }
+      .card-md-media-bt{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.304);
+      }
+      .card-md-media-right{
+        border-right: 1px solid rgba(128, 128, 128, 0.304);
+      }
+      .title-sm-media{
+        font-size: 30px;
+      }
+    }
+    @media screen and (min-width:992px) {
+      .title-sm-media{
+        font-size: 30px;
+      }
+      .bmd-media{
+        margin-top:-24px;
+      }
+    }
+    .accordion-button:focus{
+        background-color: #CFE2FF !important;
+        box-shadow:none !important;
+    }
+    span{
+      color: rgb(254, 23, 96);
+    }
+    /* .accordion-button{
+      height: 65px !important;
+      padding-top: 25px !important;
+    } */
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-5" href="#" style="font-size: 19px;" ><p class="h3">MAXIM</p></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+              <li class="nav-item">
+                <a class="nav-link active hover-underline-animation" aria-current="page" href="#" style="font-size: 19px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  hover-underline-animation " href="#" style="font-size: 19px;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" aria-current="page" href="#" style="font-size: 19px;">Service</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link   hover-underline-animation" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 19px;">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" style="font-size: 19px;">
+                  <li><a class="dropdown-item" href="#">Dropdown1</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Dropdown3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  hover-underline-animation" aria-current="page" href="#" style="font-size: 19px;">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid p-0">
+        <section class="image p-0">
+          <section class="curved">
+            <p style="text-align: center; color: white; padding-top: 200px;" class="display-3">Welcome to MAXIM</p>
+            <p style="text-align: center; color: white; ">We are team of talented designers making wesites with Bootstrap</p>
+            <div class="" style="width: 100%; height: auto; display: flex; justify-content: center;">
+              <a href="#" style="background-color: blue; padding: 10px; border-radius: 10px; text-decoration: none; color: white; font-size: 20px; font-weight: 400;" >GET STARTES</a>
+            </div>
+          </section>
+
+        </section>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <img src="istockphoto-620952978-612x612.jpg" alt="" >
+            </div>
+            <div class="col-lg-6 col-md-12 pt-md-4 ">
+                <p class="title-sm-media" style="font-weight: 400;">Voluptatem dignissimos provident</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati in est voluptates corrupti odio doloribus modi, cupiditate vitae nihil blanditiis quasi placeat facere.</p>
+                <div class="row">
+                  <div class="col-12" style="height: 120px; display: flex; justify-content: space-between;">
+                    <div class="col-1">
+                      <i class="fa-regular fa-newspaper" style="font-size: 50px; color: rgb(17, 172, 120);"></i>
+                    </div>
+                    <div class="col-11 padding-left-sm">
+                      <p class="ps-3 pt-2 " style="font-size: 25px;">Est labore ad</p>
+                      <p class="ps-3" style="font-size: 16px; margin-top: -13px;">Consequuntur sunt aut quim enim aliquam quae harum pariarur laboris nisi ut aliquip.</p>
+                    </div>
+                  </div>
+                  <div class="col-12" style="height: 120px; display: flex; justify-content: space-between;">
+                    <div class="col-1">
+                      <i class="fa-solid fa-box"  style="font-size: 50px; color: rgb(17, 172, 120);"></i>
+                    </div>
+                    <div class="col-11 padding-left-sm">
+                      <p class="ps-3 pt-2" style="font-size: 25px;">Harum esse qui</p>
+                      <p class="ps-3" style="font-size: 16px; margin-top: -13px;">Excepteur sint occaecat cupidatat non proident,sunt in culpaqui officia deserunt</p>
+                    </div>
+                  </div>
+                  <div class="col-12" style="height: 120px; display: flex; justify-content: space-between;">
+                    <div class="col-1">
+                      <i class="fa-regular fa-images"  style="font-size: 50px; color: rgb(17, 172, 120);"></i>                    </div>
+                    <div class="col-11 padding-left-sm">
+                      <p class="ps-3 pt-2" style="font-size: 25px;">Aut occaeccati</p>
+                      <p class="ps-3" style="font-size: 16px; margin-top: -13px;">Aut suscipit aut nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 p-0 card-sm-media">
+            <div class="card" style="border-top: none; border-left: none; border-radius: 0px;">
+              <div class="card-body ">
+                <h3 class="text-success">01</h3>
+                <h5 class="card-title text-dark" style="font-size: 30px;">Lorem Ipsum</h5>
+                <p class="card-text pt-2 pb-5">Ulamco laboris nisi ut aliquip ex commodo consequat.Et cinsectetur ducimus vero placeat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 card-sm-media">
+            <div class="card" style="border-top: none; border-left: none;border-radius: 0px;">
+              <div class="card-body ">
+                <h3 class="text-success">02</h3>
+                <h5 class="card-title text-dark" style="font-size: 30px;">Lorem Ipsum</h5>
+                <p class="card-text pt-2 pb-5">Ulamco laboris nisi ut aliquip ex commodo consequat.Et cinsectetur ducimus vero placeat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 card-sm-media card-md-media">
+            <div class="card" style="border-top: none; border-left: none;border-radius: 0px; border-right: none;">
+              <div class="card-body ">
+                <h3 class="text-success">03</h3>
+                <h5 class="card-title text-dark" style="font-size: 30px;">Lorem Ipsum</h5>
+                <p class="card-text pt-2 pb-5">Ulamco laboris nisi ut aliquip ex commodo consequat.Et cinsectetur ducimus vero placeat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 card-sm-media card-md-media-bt">
+            <div class="card" style="border-top: none; border-left: none; border-bottom: none;border-radius: 0px;">
+              <div class="card-body ">
+                <h3 class="text-success">04</h3>
+                <h5 class="card-title text-dark" style="font-size: 30px;">Lorem Ipsum</h5>
+                <p class="card-text pt-2 pb-5">Ulamco laboris nisi ut aliquip ex commodo consequat.Et cinsectetur ducimus vero placeat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 card-sm-media">
+            <div class="card" style="border-top: none; border-left: none; border-bottom: none;border-radius: 0px;">
+              <div class="card-body ">
+                <h3 class="text-success">05</h3>
+                <h5 class="card-title text-dark" style="font-size: 30px;">Lorem Ipsum</h5>
+                <p class="card-text pt-2 pb-5">Ulamco laboris nisi ut aliquip ex commodo consequat.Et cinsectetur ducimus vero placeat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 card-md-media-right">
+            <div class="card" style="border-top: none; border-left: none; border-bottom: none;border-radius: 0px;border-right: none; ">
+              <div class="card-body ">
+                <h3 class="text-success">06</h3>
+                <h5 class="card-title text-dark" style="font-size: 30px;">Lorem Ipsum</h5>
+                <p class="card-text pt-2 pb-5">Ulamco laboris nisi ut aliquip ex commodo consequat.Et cinsectetur ducimus vero placeat</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="container-fluid mt-5" style="background-color: rgb(172, 238, 234); height: auto;border-radius: 0px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <h5 class="card-title text-dark pt-3  " style="font-size: 30px; text-align: center;">Lorem Ipsum</h5>
+              <p style="text-align: center;" class="pt-3">Magnam dolores commodi suscipit.Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquid quos quisquam cupiditate.Et nemo qui impedit suscipit alias ea.Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 bsm-media ">
+              <div class="card bcard">  
+                <i class="fa-solid fa-basketball pt-3 text-danger" style="text-align: center; font-size: 40px;border-radius: 0px;"></i>              
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Lorem Ipsum</h5>
+                  <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 bsm-media ">
+              <div class="card bcard">  
+                <i class="fa-regular fa-file-image  pt-3 text-success" style="text-align: center; font-size: 40px;border-radius: 0px;"></i>               
+                 <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Lorem Ipsum</h5>
+                  <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-md-4 bsm-media bmd-media">
+              <div class="card bcard">  
+                <i class="fa-solid fa-chart-line pt-3" style="text-align: center; font-size: 40px;border-radius: 0px; color: green;" ></i>                
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Lorem Ipsum</h5>
+                  <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-md-4 bsm-media bmd-media">
+              <div class="card bcard">  
+                <i class="fa-solid fa-globe pt-3 " style="text-align: center; font-size: 40px; color: blue;"></i>                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Lorem Ipsum</h5>
+                  <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 pt-5">
+              <h5 class="card-title text-dark pt-3  " style="font-size: 30px; text-align: center;">F.A.Q</h5>
+              <p style="text-align: center;" class="pt-3">Magnam dolores commodi suscipit.Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquid quos quisquam cupiditate.Et nemo qui impedit suscipit alias ea.Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+          </div>
+            <div class="col-12">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                      <p style="font-size: 17px; color: rgb(11, 168, 100);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                        Non consectetur a erat nam at lectus urna duis?
+                      </p>                  
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Placeholder content for this accordion, which is intended to demonstrate the <span>.accordion-flush</span> class. This is the first item's accordion body.  </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                      <p style="font-size: 17px; color: rgb(11, 168, 100);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                        Tempus quam pellentesque nec nam ailquam sem et tortor consequat?
+                      </p>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Placeholder content for this accordion, which is intended to demonstrate the <span>.accordion-flush</span> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                      <p style="font-size: 17px; color: rgb(11, 168, 100);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                        Tortor vitae purus faucibus ornare.Varius vel pharetra vel turpis nunc eget lorem dolor?
+                      </p>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Placeholder content for this accordion, which is intended to demonstrate the <span>.accordion-flush</span> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br><br><br>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark " style="height: 200px;">
+        <div class="container">
+          <p style="text-align: center; color: white; padding-top: 90px;">
+            ©Copyright Maxim.All Rights Reserved
+            Designed by Bootstrap
+            </p>
+        </div>
+
+      </div>
+
+
+
+
+</body>
+</html>
